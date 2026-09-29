@@ -1,0 +1,91 @@
+# ---------------------------------------------------------------------------
+# Secrets — never commit. Keep real values in local.properties / local files.
+# ---------------------------------------------------------------------------
+
+# Local config (signing passwords, wispyr.appId / wispyr.appHash, SDK paths)
+local.properties
+**/local.properties
+secrets.properties
+keystore.properties
+signing.properties
+*.secrets
+.env
+.env.*
+*.env
+
+# Signing keys / certificates
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.pem
+*.key
+*.p8
+*.cer
+*.crt
+*.der
+*.csr
+*.mobileprovision
+
+# Firebase / Google / Huawei service configs
+google-services.json
+**/google-services.json
+agconnect-services.json
+**/agconnect-services.json
+GoogleService-Info.plist
+*service-account*.json
+*-credentials.json
+credentials.json
+client_secret*.json
+.firebase/
+.firebaserc
+firebase-debug.log
+firebase-debug.*.log
+fabric.properties
+crashlytics.properties
+crashlytics-build.properties
+
+# Play Console / store publishing
+play-store-credentials*
+*.play.json
+
+# ---------------------------------------------------------------------------
+# Build outputs / caches
+# ---------------------------------------------------------------------------
+.gradle/
+.kotlin/
+build/
+obj/
+.cxx/
+.externalNativeBuild/
+captures/
+*.apk
+*.aab
+*.ap_
+*.apks
+*.idsig
+*.dex
+*.hprof
+*.log
+*.tmp
+
+TMessagesProj/jniLibs/
+TMessagesProj/jniRes/
+TMessagesProj/afat/
+TMessagesProj_App/afat/
+TMessagesProj_AppHockeyApp/afat/
+TMessagesProj_AppStandalone/afat/
+TMessagesProj_AppHuawei/afat/
+TMessagesProj/jni/ffmpeg/build_android
+
+# ---------------------------------------------------------------------------
+# IDE / OS
+# ---------------------------------------------------------------------------
+.idea/
+*.iml
+.vscode/
+.cursor/
+*.swp
+*~
+.DS_Store
+**/.DS_Store
